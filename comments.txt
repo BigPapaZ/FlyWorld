@@ -1,0 +1,26 @@
+
+- Technically your code functions and performs all the operations that are expected of it, but there is one slight problem with your structure. In your Creature constructor, you take in a boolean variable and you do not use it at all. I noticed in your Predators class there is an isPredator() method, but you also seem to have this same method in Spider, Frog, and Bird. This code duplication can be avoided if you used that boolean variable in the Creature constructor and change the Creature.isPredator() method to return that variable. By default you have the isPredator() method overriden in each class, which in theory works, but is additional code that makes the project strutuce more difficult to understand.
+
+I've corrected your code to use the isPredator() method correctly.
+
+
+There were also some missed opportunities to clean up your code from the midway check
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
